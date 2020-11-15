@@ -28,7 +28,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: gray;
+  background: white;
   direction: column;
 }
 
@@ -142,8 +142,8 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
-  outline: 4px #888;
+  background-color: #888;
+  outline: 2px #888;
   padding: 0.5em;
   font-weight: lighter;
   font-size: 1rem;
