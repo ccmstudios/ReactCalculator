@@ -40,13 +40,15 @@ h1{
         flex:1;
         justify-content:center;
         align-items: center;
-        font-weight: lighter;
+        font-weight: bold;
         font-size: 1.4em;
         background-color: white;
-        color: gray;
+        color: black;
         outline:1px solid #888;
     }
-
+.button:hover{
+    background-color: orange;
+}
     .calc-wrapper{
         width: 400px;
         height: 600px;

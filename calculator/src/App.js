@@ -48,12 +48,12 @@ subtract = () => {
   this.state.operator = "subtract";
 };
 multiply = ()=> {
-  this.state.PreviousNumber = this.state.input;
+  this.state.previousNumber = this.state.input;
   this.setState({input: ""});
   this.state.operator = "multiply";
 };
 divide = ()=> {
-  this.state.PreviousNumber = this.state.input;
+  this.state.previousNumber = this.state.input;
   this.setState({input: ""});
   this.state.operator = "divide";
 };
@@ -68,7 +68,7 @@ if (this.state.operator == "plus") {
     parseInt(this.state.currentNumber)
   });
 }
-else if (this.state.operator == "minus") {
+else if (this.state.operator == "subtract") {
   this.setState({
     input: 
     parseInt(this.state.previousNumber) - 
