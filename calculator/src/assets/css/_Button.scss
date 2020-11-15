@@ -1,0 +1,19 @@
+@mixin TextDesign {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    letter-spacing: 2em;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    color: white;
+}
+
+@mixin FlexCenter($background) {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background:$background;
+}
+
+button{
+    @include TextDesign();
+    @include FlexCenter(blue);
+}

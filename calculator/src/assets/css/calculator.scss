@@ -1,0 +1,97 @@
+@import "./Button";
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&family=Modak&display=swap');
+
+@mixin FlexCenter($background, $direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:$background;
+    direction: $direction;
+}
+
+@mixin TextDesign {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    letter-spacing: 1em;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    color: Blue;
+    font-size: 72px;
+}
+body{
+    @include FlexCenter(gray, column);
+}
+.app{
+    @include FlexCenter(white, column);
+    margin-top:100px;
+
+}
+
+.clickme{
+    @include FlexCenter(red, column)
+}
+h1{
+    @include TextDesign();
+    }
+
+.button{
+        display: flex;
+        height: 4em;
+        flex:1;
+        justify-content:center;
+        align-items: center;
+        font-weight: lighter;
+        font-size: 1.4em;
+        background-color: white;
+        color: gray;
+        outline:1px solid #888;
+    }
+
+    .calc-wrapper{
+        width: 400px;
+        height: 600px;
+        margin-left: 200px;
+    }
+
+    .row{
+        display: flex;
+        width: 100%;}
+
+    .operator{
+        background-color: #fe9241
+    }
+
+    .input{
+        display: flex;
+        height: 4em;
+        flex:1;
+        background-color: #000000;
+        outline: 1px #888;
+        color: white;
+        justify-content: flex-end;
+        padding: 0.5em;
+        font-weight: bold;
+        font-size:1.4em;
+        align-items: center;
+        
+    }
+
+    .clear{
+        color: black;
+            display: flex;
+            height: 4em;
+            flex:1;
+            align-items:center;
+            background-color:white;
+            outline: 4px #888;
+            padding: 0.5em;
+            font-weight: lighter;
+            font-size:1rem;
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            letter-spacing: 1em;
+            justify-content: center;
+            font-weight: bold;
+            border: 5px black;
+        }
